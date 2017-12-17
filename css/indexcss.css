@@ -3,25 +3,25 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  background: url(../images/main-bg.jpg);
+  background: url(../images/main-bg.jpg) ;
 }
 
 
 
-/* CUSTOMIZE THE CAROUSEL
+/* 滚动图片栏元素
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* 滚动图片基本样式 */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
+/* 滚动图片控制栏 */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* 滚动乳片大小设置 */
 .carousel-item {
   height: 35rem;
   background-color: #777;
@@ -35,10 +35,10 @@ body {
 }
 
 
-/* MARKETING CONTENT
+/* 滚动图片营销内容
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
+/* 图片内部文字 */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -52,14 +52,14 @@ body {
 }
 
 
-/* Featurettes
+/* 页面尾部
 ------------------------- */
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
+/* 产品营销页面标题 */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -67,7 +67,12 @@ body {
 }
 
 
-/* RESPONSIVE CSS
+.footspan a:hover {
+	text-decoration:underline;
+	color:#000000;
+}
+
+/* 响应式布局css
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
