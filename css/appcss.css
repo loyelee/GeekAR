@@ -72,3 +72,13 @@ body {
     bottom: 30px;
   }
 }
+
+
+/*github图标
+===========================*/
+.github{
+	color:rgba(198,203,209,1.00);
+}
+.github:hover{
+	color:rgba(149,157,165,1.00);	
+}
