@@ -1,0 +1,126 @@
+﻿已开始：2017/12/18 20:41
+
+images\app1网易洞见.png - 上传操作成功
+images\app2腾讯博物馆.jpeg - 上传操作成功
+images\app3时光魔镜.jpeg - 上传操作成功
+images\app4AR云.jpg - 上传操作成功
+images\app6视+AR.png - 上传操作成功
+images\app7乐无ＡＲ.png - 上传操作成功
+images\app8阿里火眼.jpg - 上传操作成功
+.gitattributes - 上传操作成功
+about.html - 上传操作成功
+apps.html - 上传操作成功
+dvelop.html - 上传操作成功
+index.html - 上传操作成功
+mall.html - 上传操作成功
+news.html - 上传操作成功
+welcome.html - 上传操作成功
+/htdocs/css/aboutcss.css - 获取操作成功
+/htdocs/css/aos.css - 获取操作成功
+/htdocs/css/appcss.css - 获取操作成功
+/htdocs/css/bootstrap.min.css - 获取操作成功
+/htdocs/css/devcss.css - 获取操作成功
+/htdocs/css/indexcss.css - 获取操作成功
+/htdocs/css/mallcss.css - 获取操作成功
+/htdocs/css/newscss.css - 获取操作成功
+/htdocs/css/welcss.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/css/font-awesome.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/css/font-awesome.min.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/fontawesome-webfont.eot - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/fontawesome-webfont.svg - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2 - 获取操作成功
+/htdocs/font-awesome-4.7.0/fonts/FontAwesome.otf - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/animated.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/bordered-pulled.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/core.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/fixed-width.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/font-awesome.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/font-awesome.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/icons.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/larger.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/list.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/mixins.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/mixins.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/path.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/rotated-flipped.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/screen-reader.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/stacked.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/variables.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/less/variables.less - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_animated.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_bordered-pulled.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_core.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_fixed-width.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_icons.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_larger.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_list.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_mixins.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_path.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_rotated-flipped.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_screen-reader.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_stacked.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/_variables.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/font-awesome.css - 获取操作成功
+/htdocs/font-awesome-4.7.0/scss/font-awesome.scss - 获取操作成功
+/htdocs/font-awesome-4.7.0/HELP-US-OUT.txt - 获取操作成功
+/htdocs/fonts/glyphicons-halflings-regular.eot - 获取操作成功
+/htdocs/fonts/glyphicons-halflings-regular.svg - 获取操作成功
+/htdocs/fonts/glyphicons-halflings-regular.ttf - 获取操作成功
+/htdocs/fonts/glyphicons-halflings-regular.woff - 获取操作成功
+/htdocs/fonts/glyphicons-halflings-regular.woff2 - 获取操作成功
+/htdocs/images/01.png - 获取操作成功
+/htdocs/images/02.png - 获取操作成功
+/htdocs/images/03.png - 获取操作成功
+/htdocs/images/app1���׶���.png - 发生错误 - 发生 一个FTP错误 - 不能获得 app1���׶���.png。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app2��Ѷ�����.jpeg - 发生错误 - 发生 一个FTP错误 - 不能获得 app2��Ѷ�����.jpeg。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app3ʱ��ħ��.jpeg - 发生错误 - 发生 一个FTP错误 - 不能获得 app3ʱ��ħ��.jpeg。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app4AR��.jpg - 发生错误 - 发生 一个FTP错误 - 不能获得 app4AR��.jpg。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app5NBAAR.jpeg - 获取操作成功
+/htdocs/images/app6��+AR.png - 发生错误 - 发生 一个FTP错误 - 不能获得 app6��+AR.png。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app7���ޣ���.png - 发生错误 - 发生 一个FTP错误 - 不能获得 app7���ޣ���.png。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/app8�������.jpg - 发生错误 - 发生 一个FTP错误 - 不能获得 app8�������.jpg。 访问被拒绝。文件可能不存在，或者 可能有权限问题。 
+/htdocs/images/banner.jpg - 获取操作成功
+/htdocs/images/bryan-goff-383844.jpg - 获取操作成功
+/htdocs/images/carousel1.jpg - 获取操作成功
+/htdocs/images/carousel2.jpg - 获取操作成功
+操作超时。正在取消…如果多次连接尝试超时，请延长“FTP 超时”持续时间（“首选项” > “网站”），然后再试一次。
+操作超时。正在取消…如果多次连接尝试超时，请延长“FTP 超时”持续时间（“首选项” > “网站”），然后再试一次。
+/htdocs/images/carousel3.jpg - 获取操作成功
+/htdocs/images/cd-top-arrow.svg - 获取操作成功
+/htdocs/images/GeekAR.ico - 获取操作成功
+/htdocs/images/GeekAR.png - 获取操作成功
+/htdocs/images/johny-goerend-411397.jpg - 获取操作成功
+/htdocs/images/main-bg.jpg - 获取操作成功
+/htdocs/js/aos.js - 获取操作成功
+/htdocs/js/bootstrap.min.js - 获取操作成功
+/htdocs/js/bootstrap.min.js.map - 获取操作成功
+/htdocs/js/highlight.min.js - 获取操作成功
+/htdocs/js/holder.min.js - 获取操作成功
+/htdocs/js/jquery-3.2.1.min.js - 获取操作成功
+/htdocs/js/jquery-3.2.1.min.map - 获取操作成功
+/htdocs/js/modernizr.js - 获取操作成功
+/htdocs/js/myjs.js - 获取操作成功
+/htdocs/js/popper.min.js - 获取操作成功
+F:\极客AR网\GeekAR\logreport\ - 已创建文件夹
+/htdocs/logreport/no_delete - 获取操作成功
+/htdocs/video/Microsoft HoloLens.mp4 - 获取操作成功
+/htdocs/bootstrap.html - 获取操作成功
+/htdocs/jquery.html - 获取操作成功
+/htdocs/junk.html - 获取操作成功
+/htdocs/README.md - 获取操作成功
+/htdocs/test.html - 获取操作成功
+
+文件活动未完成。有 7 个文件或文件夹未完成。
+文件已更新:101
+有错误的文件：7
+/htdocs/images/app1���׶���.png
+/htdocs/images/app2��Ѷ�����.jpeg
+/htdocs/images/app3ʱ��ħ��.jpeg
+/htdocs/images/app4AR��.jpg
+/htdocs/images/app6��+AR.png
+/htdocs/images/app7���ޣ���.png
+/htdocs/images/app8�������.jpg
+
+已结束：2017/12/18 20:45
