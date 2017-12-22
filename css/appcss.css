@@ -1,84 +1,171 @@
-/*!
- * Copyright 2017 The Susmote Authors
- * Contens under MET (https://github.com/susmote/GeekAR/blob/master/css/appcss.css)
-*/
-body {
-  padding-top: 3rem;
-  background: rgba(237,241,247,1.00);
-}
-
-.a{
-	height: 204px;
-	background-color: rgb(255, 255, 255);
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
-}
-
-
-/*
-返回顶部
-*/
-.cd-top {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* image replacement properties */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
-}
-.cd-top a{
-  color: #e86256;
-  text-decoration: none;
-}
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
-}
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-.no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-@media only screen and (min-width: 768px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
-  }
-}
-
-
-/*github图标
-===========================*/
-.github{
-	color:rgba(198,203,209,1.00);
-}
-.github:hover{
-	color:rgba(149,157,165,1.00);	
-}
+/*!
+
+ * Copyright 2017 The Susmote Authors
+
+ * Contens under MET (https://github.com/susmote/GeekAR/blob/master/css/appcss.css)
+
+*/
+
+body {
+
+  padding-top: 5rem;
+
+  background: rgba(237,241,247,1.00);
+
+}
+
+
+
+.a{
+
+	height: 204px;
+
+	background-color: rgb(255, 255, 255);
+
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+
+}
+
+
+
+
+
+
+/*
+
+返回顶部
+
+*/
+
+.cd-top {
+
+  display: inline-block;
+
+  height: 40px;
+
+  width: 40px;
+
+  position: fixed;
+
+  bottom: 40px;
+
+  right: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  /* image replacement properties */
+
+  overflow: hidden;
+
+  text-indent: 100%;
+
+  white-space: nowrap;
+
+  background: rgba(232, 98, 86, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+
+  visibility: hidden;
+
+  opacity: 0;
+
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+}
+
+.cd-top a{
+
+  color: #e86256;
+
+  text-decoration: none;
+
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+
+  transition: opacity .3s 0s, visibility 0s 0s;
+
+}
+
+.cd-top.cd-is-visible {
+
+  /* the button becomes visible */
+
+  visibility: visible;
+
+  opacity: 1;
+
+}
+
+.cd-top.cd-fade-out {
+
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+
+  opacity: .5;
+
+}
+
+.no-touch .cd-top:hover {
+
+  background-color: #e86256;
+
+  opacity: 1;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .cd-top {
+
+    right: 20px;
+
+    bottom: 20px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .cd-top {
+
+    height: 60px;
+
+    width: 60px;
+
+    right: 30px;
+
+    bottom: 30px;
+
+  }
+
+}
+
+
+.banner-card{
+	background: #FFFFFF;
+}
+
+
+/*github图标
+
+===========================*/
+
+.github{
+
+	color:rgba(198,203,209,1.00);
+
+}
+
+.github:hover{
+
+	color:rgba(149,157,165,1.00);	
+
+}
+
