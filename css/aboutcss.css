@@ -1,12 +1,59 @@
-/*!
- * Copyright 2017 The Susmote Authors
- * Contens under MET (https://github.com/susmote/GeekAR/blob/master/css/aboutcss.css)
-*/
-/*github图标
-===========================*/
-.github{
-	color:rgba(198,203,209,1.00);
-}
-.github:hover{
-	color:rgba(149,157,165,1.00);	
+/*!
+
+ * Copyright 2017 The Susmote Authors
+
+ * Contens under MET (https://github.com/susmote/GeekAR/blob/master/css/aboutcss.css)
+
+*/
+body {
+
+  padding-top: 4rem;
+
+  padding-bottom: 3rem;
+
+  color:#000000;
+
+  overflow-x:hidden;
+
+}
+.page-bg {
+    background: url(../images/aboutbg.png);
+    width: auto;
+    height: 160px;
+}
+.vcenter {
+    text-align: center;
+    padding-left: 33%;
+    display: inline-block;
+}
+.vcenter::before {
+    content: '';
+    display: inline-block;
+    margin: 0 0 0 -.25em;
+    height: 100%;
+    vertical-align: middle;
+}
+.page-bg .page-title {
+	color:#FFFCFC;
+    text-align: center;
+    margin-top: 40px;
+}
+.page-bg .page-title  h1{
+	font-size: 28px;
+}
+
+/*github图标
+
+===========================*/
+
+.github{
+
+	color:rgba(198,203,209,1.00);
+
+}
+
+.github:hover{
+
+	color:rgba(149,157,165,1.00);	
+
 }

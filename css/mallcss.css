@@ -76,7 +76,9 @@ li { list-style: none; }
 
 	margin: 30px auto; 
 
-	background: url(../images/catogorybg.jpg) ;
+	background: url(../images/catogorybg.jpg) no-repeat;
+	
+	background-size: 100% 100%;
 
 }
 
@@ -210,7 +212,7 @@ li { list-style: none; }
 
 	margin-left: 0px;
 
-	width: 400px; 
+	width: 450px; 
 
 	height: 300px; 
 
@@ -221,12 +223,14 @@ li { list-style: none; }
 }
 
 .menu ul li .submenu .subleft dl {
+	
+	font-size: 25px;
 
 	overflow: hidden;
 
 	border-bottom: 1px solid #D1D1D1;
 
-	padding: 10px 0; 
+	padding: 10px 10px; 
 
 }
 
@@ -244,13 +248,15 @@ li { list-style: none; }
 
 	color: #707070; 
 
-	font-size: 12px;
+	font-size: 17px;
 
 	cursor: pointer;
 
 }
 
 .menu ul li .submenu .subleft dl dd {
+	
+	font-size: 15px;
 
 }
 
@@ -264,7 +270,7 @@ li { list-style: none; }
 
 	padding: 0 5px; 
 
-	color: #707070; 
+	color:#000000; 
 
 	height: 14px;
 
@@ -272,17 +278,29 @@ li { list-style: none; }
 
 	margin: 3px 0;
 
-	font-size: 11px;
+	font-size: 14px;
 
 }
-
-.menu ul li .submenu .subright {
-
-	width: 310px; 
+.subright{
+	width: 450px; 
 
 	height: 300px; 
 
 	background-color: #FFFFFF; 
+
+	float: left;
+	
+}
+
+.menu ul li .submenu .subright {
+
+	width: 400px; 
+
+	height: 375px; 
+
+	background-color: #FFFFFF; 
+	
+	background-size: 100% 100%;
 
 	float: left;
 
