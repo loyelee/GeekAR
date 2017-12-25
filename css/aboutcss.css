@@ -79,6 +79,30 @@ hr.style-nine:after {
     background: white;
 }
 
+hr.style-ten {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-ten:after {
+    content:"友情链接";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.thanks{
+	width:100%;
+	padding-left: 25px;
+	height:60px;
+}
+
 /*github图标
 
 ===========================*/
