@@ -7,11 +7,14 @@
 	<link rel="icon" href="images/GeekAR.ico">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/welcss.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<script type="text/javascript" src="js/modernizr.js"></script>
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 	<body style="overflow-x:hidden;overflow-y:hidden">
-		<div>
-			<!-- 视频背景 -->
+	<div class="wrapper active-page1">
+	  <div class="page page1">
+	  	<!-- 视频背景 -->
 			<div>
 				<video width="1366px" height="768px" autoplay id="lifestyle-lapse" loop mute="" style="z-index: -1">
 				<source src="video/Microsoft HoloLens.mp4">
@@ -22,19 +25,137 @@
 			<div class="videoflow">
 				<div id="brand">
 					<a	href="index.html">
-					<img src="images/GeekAR.png" width="20%" alt="极客虚拟网">
+					<img src="images/GeekAR.png" width="17%" alt="极客虚拟网">
 					</a>
-				</div>  
+				</div>
 				<div class="text-center main-title">
-					<br><br><br><br><br><br><br>
 					<h1><strong>未来·娱乐·梦想</strong></h1>
-					<h2>极客虚拟网，快人一步，体验未来</h2>
+					<h3>极客虚拟网，快人一步，体验未来</h3>
 					<a class="btn btn-outline-primary my-2 my-sm-0 mybtn1" href="index.html">进入主页</a>
 				</div>
 			</div>
+	  </div>
+	  <div class="page page2">
+		<a	href="index.html">
+		<img src="images/GeekAR.png" width="17%" alt="极客虚拟网">
+		</a>
+		<div class="text-center main-title1">
+			<a href="news.html"><h5>科技博客&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></h5></a>
+			<h3>最新资讯，实时掌握</h3>
+			<img src="images/wel-news.gif" class="img-circle">
 		</div>
+	  </div>
+	  <div class="page page3">
+    	<a	href="index.html">
+		<img src="images/GeekAR.png" width="17%" alt="极客虚拟网">
+		</a>
+	    <div class="text-center main-title1">
+			<a href="mall.html"><h5>极客商城&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></h5></a>
+			<h3>购你所购，享你所想</h3>
+			<img src="images/wel-mall.png">
+		</div>
+	  </div>
+	  <div class="page page4">
+    	<a	href="index.html">
+		<img src="images/GeekAR.png" width="17%" alt="极客虚拟网">
+		</a>
+	    <h2 class="chameleon" style="font-size: 100px">The Future</h2>
+	  </div>
+	</div>
+	<div class="nav-panel">
+	  <div class="scroll-btn up"></div>
+	  <div class="scroll-btn down"></div>
+	  <nav>
+	    <ul>
+	      <li data-target="1" class="nav-btn nav-page1 active"></li>
+	      <li data-target="2" class="nav-btn nav-page2"></li>
+	      <li data-target="3" class="nav-btn nav-page3"></li>
+	      <li data-target="4" class="nav-btn nav-page4"></li>
+	    </ul>
+	  </nav>
+	</div>	
+	<script src="js/stopExecutionOnTimeout.js?t=1"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	'use strict';
+	$(document).ready(function () {
+	    var $wrap = $('.wrapper'), pages = $('.page').length, scrolling = false, currentPage = 1, $navPanel = $('.nav-panel'), $scrollBtn = $('.scroll-btn'), $navBtn = $('.nav-btn');
+	    function manageClasses() {
+	        $wrap.removeClass(function (index, css) {
+	            return (css.match(/(^|\s)active-page\S+/g) || []).join(' ');
+	        });
+	        $wrap.addClass('active-page' + currentPage);
+	        $navBtn.removeClass('active');
+	        $('.nav-btn.nav-page' + currentPage).addClass('active');
+	        $navPanel.addClass('invisible');
+	        scrolling = true;
+	        setTimeout(function () {
+	            $navPanel.removeClass('invisible');
+	            scrolling = false;
+	        }, 1000);
+	    }
+	    function navigateUp() {
+	        if (currentPage > 1) {
+	            currentPage--;
+	            if (Modernizr.csstransforms) {
+	                manageClasses();
+	            } else {
+	                $wrap.animate({ 'top': '-' + (currentPage - 1) * 100 + '%' }, 1000);
+	            }
+	        }
+	    }
+	    function navigateDown() {
+	        if (currentPage < pages) {
+	            currentPage++;
+	            if (Modernizr.csstransforms) {
+	                manageClasses();
+	            } else {
+	                $wrap.animate({ 'top': '-' + (currentPage - 1) * 100 + '%' }, 1000);
+	            }
+	        }
+	    }
+	    $(document).on('mousewheel DOMMouseScroll', function (e) {
+	        if (!scrolling) {
+	            if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+	                navigateUp();
+	            } else {
+	                navigateDown();
+	            }
+	        }
+	    });
+	    $(document).on('click', '.scroll-btn', function () {
+	        if ($(this).hasClass('up')) {
+	            navigateUp();
+	        } else {
+	            navigateDown();
+	        }
+	    });
+	    $(document).on('click', '.nav-btn:not(.active)', function () {
+	        if (!scrolling) {
+	            var target = $(this).attr('data-target');
+	            if (Modernizr.csstransforms) {
+	                $wrap.removeClass(function (index, css) {
+	                    return (css.match(/(^|\s)active-page\S+/g) || []).join(' ');
+	                });
+	                $wrap.addClass('active-page' + target);
+	                $navBtn.removeClass('active');
+	                $(this).addClass('active');
+	                $navPanel.addClass('invisible');
+	                currentPage = target;
+	                scrolling = true;
+	                setTimeout(function () {
+	                    $navPanel.removeClass('invisible');
+	                    scrolling = false;
+	                }, 1000);
+	            } else {
+	                $wrap.animate({ 'top': '-' + (target - 1) * 100 + '%' }, 1000);
+	            }
+	        }
+	    });
+	});
+	</script>
 </body>
 </html>
