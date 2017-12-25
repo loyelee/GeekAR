@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+<!-- jQury语法 -->
+<!-- 美元符号定义 jQuery
+选择符（selector）"查询"和"查找" HTML 元素
+jQuery 的 action() 执行对元素的操作 -->
+<script type="text/javascript">
+	$(document).ready(function(){
+ 
+   // 开始写 jQuery 代码...
+ 
+})
+	$(function(){
+ 
+   // 开始写 jQuery 代码...
+ 
+});
+</script>
+<!-- end -->
+
+
+<!-- jQuery选择器 -->
+<script type="text/javascript">
+//元素选择器
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+//id选择器
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+//class选择器
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".test").hide();
+  });
+});
+</script>
+
+
+<!-- jQuery事件 -->
+<script type="text/javascript">
+$("p").click(function(){
+    // 动作触发后执行的代码!!
+});
+//点击隐藏
+$("p").click(function(){
+  $(this).hide();
+});
+//当双击元素时，会发生 dblclick 事件。
+$("p").dblclick(function(){
+  $(this).hide();
+});
+//当鼠标指针穿过元素时，会发生 mouseenter 事件。
+$("#p1").mouseenter(function(){
+    alert('您的鼠标移到了 id="p1" 的元素上!');
+});
+//当鼠标指针离开元素时，会发生 mouseleave 事件。
+$("#p1").mouseleave(function(){
+    alert("再见，您的鼠标离开了该段落。");
+});
+//当鼠标指针移动到元素上方，并按下鼠标按键时，会发生 mousedown 事件。
+$("#p1").mousedown(function(){
+    alert("鼠标在该段落上按下！");
+});
+//当在元素上松开鼠标按钮时，会发生 mouseup 事件。
+$("#p1").mouseup(function(){
+    alert("鼠标在段落上松开。");
+});
+//hover()方法用于模拟光标悬停事件
+$("#p1").hover(
+    function(){
+        alert("你进入了 p1!");
+    },
+    function(){
+        alert("拜拜! 现在你离开了 p1!");
+    }
+);
+//当元素获得焦点时，发生 focus 事件。
+$("input").focus(function(){
+  $(this).css("background-color","#cccccc");
+});
+//当元素失去焦点时，发生 blur 事件。
+$("input").blur(function(){
+  $(this).css("background-color","#ffffff");
+});
+</script>
+
+
+<!-- jQuery效果 -->
+<script type="text/javascript">
+//通过 jQuery，您可以使用 hide() 和 show() 方法来隐藏和显示 HTML 元素：
+$("#hide").click(function(){
+  $("p").hide();
+});
+ 
+$("#show").click(function(){
+  $("p").show();
+});
+/*语法
+$(selector).hide(speed,callback);
+$(selector).show(speed,callback);
+可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是隐藏或显示完成后所执行的函数名称。*/
+
+//下面的例子演示了带有 speed 参数的 hide() 方法：
+$("button").click(function(){
+  $("p").hide(1000);
+});
+//通过 jQuery，您可以使用 toggle() 方法来切换 hide() 和 show() 方法。
+$("button").click(function(){
+  $("p").toggle();
+});
+/*jQuery fadeIn() 用于淡入已隐藏的元素。
+语法:
+$(selector).fadeIn(speed,callback);
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。.
+可选的 callback 参数是 fading 完成后所执行的函数名称。*/
+//下面的例子演示了带有不同参数的 fadeIn() 方法：
+$("button").click(function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow");
+  $("#div3").fadeIn(3000);
+});
+/*jQuery fadeOut() 方法用于淡出可见元素。
+语法:
+$(selector).fadeOut(speed,callback);
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是 fading 完成后所执行的函数名称。*/
+//下面的例子演示了带有不同参数的 fadeOut() 方法：
+$("button").click(function(){
+  $("#div1").fadeOut();
+  $("#div2").fadeOut("slow");
+  $("#div3").fadeOut(3000);
+});
+/*jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
+如果元素已淡出，则 fadeToggle() 会向元素添加淡入效果。
+如果元素已淡入，则 fadeToggle() 会向元素添加淡出效果。
+语法:
+$(selector).fadeToggle(speed,callback);
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是 fading 完成后所执行的函数名称。*/
+//下面的例子演示了带有不同参数的 fadeToggle() 方法：
+$("button").click(function(){
+  $("#div1").fadeToggle();
+  $("#div2").fadeToggle("slow");
+  $("#div3").fadeToggle(3000);
+});
+/*jQuery fadeTo() 方法允许渐变为给定的不透明度（值介于 0 与 1 之间）。
+语法:
+$(selector).fadeTo(speed,opacity,callback);
+必需的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+fadeTo() 方法中必需的 opacity 参数将淡入淡出效果设置为给定的不透明度（值介于 0 与 1 之间）。
+可选的 callback 参数是该函数完成后所执行的函数名称。*/
+//下面的例子演示了带有不同参数的 fadeTo() 方法
+$("button").click(function(){
+  $("#div1").fadeTo("slow",0.15);
+  $("#div2").fadeTo("slow",0.4);
+  $("#div3").fadeTo("slow",0.7);
+});
+//jQuery slideDown() 方法用于向下滑动元素。
+$("#flip").click(function(){
+  $("#panel").slideDown();
+});
+//jQuery slideUp() 方法用于向上滑动元素。
+$("#flip").click(function(){
+  $("#panel").slideUp();
+});
+//jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+$("#flip").click(function(){
+  $("#panel").slideToggle();
+});
+//jQuery animate() 方法用于创建自定义动画。
+$("button").click(function(){
+  $("div").animate({left:'250px'});
+});
+//请注意，生成动画的过程中可同时使用多个属性：
+$("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    opacity:'0.5',
+    height:'150px',
+    width:'150px'
+  });
+});
+//也可以定义相对值（该值相对于元素的当前值）。需要在值的前面加上 += 或 -=：
+$("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    height:'+=150px',
+    width:'+=150px'
+  });
+});
+//您甚至可以把属性的动画值设置为 "show"、"hide" 或 "toggle"：
+$("button").click(function(){
+  $("div").animate({
+    height:'toggle'
+  });
+});
+//默认地，jQuery 提供针对动画的队列功能。
+//这意味着如果您在彼此之后编写多个 animate() 调用，jQuery 会创建包含这些方法调用的"内部"队列。然后逐一运行这些 animate 调用。
+$("button").click(function(){
+  var div=$("div");
+  div.animate({height:'300px',opacity:'0.4'},"slow");
+  div.animate({width:'300px',opacity:'0.8'},"slow");
+  div.animate({height:'100px',opacity:'0.4'},"slow");
+  div.animate({width:'100px',opacity:'0.8'},"slow");
+});
+//jQuery stop() 方法用于停止动画或效果，在它们完成之前。
+$("#stop").click(function(){
+  $("#panel").stop();
+});
+//jQuery Callback 方法
+//以下实例在隐藏效果完全实现后回调函数:
+$("button").click(function(){
+  $("p").hide("slow",function(){
+    alert("段落现在被隐藏了");
+  });
+});
+//以下实例没有回调函数，警告框会在隐藏效果完成前弹出：
+$("button").click(function(){
+  $("p").hide(1000);
+  alert("段落现在被隐藏了");
+});
+/*通过 jQuery，可以把动作/方法链接在一起。
+Chaining 允许我们在一条语句中运行多个 jQuery 方法（在相同的元素上）。*/
+//下面的例子把 css()、slideUp() 和 slideDown() 链接在一起。"p1" 元素首先会变为红色，然后向上滑动，再然后向下滑动：
+$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+/*当进行链接时，代码行会变得很差。不过，jQuery 语法不是很严格；您可以按照希望的格式来写，包含换行和缩进。
+如下书写也可以很好地运行：*/
+$("#p1").css("color","red")
+  .slideUp(2000)
+  .slideDown(2000);
+</script>
+
+
+<!-- jQuery HTML -->
+<!-- jQuery 拥有可操作 HTML 元素和属性的强大方法。 -->
+<script type="text/javascript">
+/*text() - 设置或返回所选元素的文本内容
+html() - 设置或返回所选元素的内容（包括 HTML 标记）
+val() - 设置或返回表单字段的值*/
+//下面的例子演示如何通过 jQuery text() 和 html() 方法来获得内容：
+$("#btn1").click(function(){
+  alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+  alert("HTML: " + $("#test").html());
+});
+//下面的例子演示如何通过 jQuery val() 方法获得输入字段的值
+$("#btn1").click(function(){
+  alert("值为: " + $("#test").val());
+});
+//jQuery attr() 方法用于获取属性值。
+$("button").click(function(){
+  alert($("#runoob").attr("href"));
+});
+//下面的例子演示如何通过 text()、html() 以及 val() 方法来设置内容：
+$("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+});
+$("#btn2").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+});
+$("#btn3").click(function(){
+    $("#test3").val("RUNOOB");
+});
+//下面的例子演示带有回调函数的 text() 和 html()：
+$("#btn1").click(function(){
+    $("#test1").text(function(i,origText){
+        return "旧文本: " + origText + " 新文本: Hello world! (index: " + i + ")"; 
+    });
+});
+ 
+$("#btn2").click(function(){
+    $("#test2").html(function(i,origText){
+        return "旧 html: " + origText + " 新 html: Hello <b>world!</b> (index: " + i + ")"; 
+    });
+});
+//jQuery attr() 方法也用于设置/改变属性值。
+$("button").click(function(){
+  $("#runoob").attr("href","http://www.runoob.com/jquery");
+});
+//attr() 方法也允许您同时设置多个属性。
+$("button").click(function(){
+    $("#runoob").attr({
+        "href" : "http://www.runoob.com/jquery",
+        "title" : "jQuery 教程"
+    });
+});
+//下面的例子演示带有回调函数的 attr() 方法：
+$("button").click(function(){
+  $("#runoob").attr("href", function(i,origValue){
+    return origValue + "/jquery"; 
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
