@@ -1,0 +1,8 @@
+网站的开始页面为welcome.html
+本网站适用于CHrome浏览器和FIrefox高版本浏览器
+不支持IE浏览器
+最佳浏览分辨率为1366*768（主流分辨率）；
+其他分辨率不做考虑
+本网站临时网址为mrw.so/geekar;
+项目开源代码公布在github.com/susmote/geekar
+本网站具有自主知识产权，不允许其他盗用商业行为
