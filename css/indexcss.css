@@ -264,7 +264,7 @@ body {
 
 .cd-top.cd-is-visible {
 
-  /* the button becomes visible */
+  /* 按钮可见 */
 
   visibility: visible;
 
@@ -274,7 +274,7 @@ body {
 
 .cd-top.cd-fade-out {
 
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  /*页面往下滚动返回顶部透明度变化 */
 
   opacity: .5;
 
